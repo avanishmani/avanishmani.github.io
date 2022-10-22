@@ -1,314 +1,406 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Headder Started Here ! -->
-    <div id="header">
-        <div id="container">
-            <nav>
-                <!-- <img src="https://www.48hourslogo.com/48hourslogo_data/2019/10/18/89992_1571368582.jpg" alt="logo" class="logo"> -->
-                <h2 class="logo"> </h2>
-                <ul id="sidemenu">
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#Techstack">Tech Stack</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <!-- <p>Java Backend Developer</p> -->
-                <h1>Hi, I am  <span> Avanish  </span><br>Mani From India</h1>
-                <h3>I'm a <span>Java </span>Backend Developer.</h3>
-            </div>
-        </div>
-    </div>
-     <!-- Headder Ended Here ! -->
-      <!-- About Started Here ! -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./image/DSC_0517.JPG" alt="myprofile">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Enthusiastic aspiring Java back-end developer. Proficient Collaborative and Hard-Working Team player. Interested in Data Structure & Algorithm. Good in solving DSA problems. have good knowledge of Javascript & Java language and Back-end tech stack. Passionate about coding and interested in working in a product-based company.
-                        <br>
-                        <br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" style="border-radius: 50%;" href="./media/avanish.jpg">
+    <link rel="stylesheet" href="index.css" />
 
-                        I also loves to play Cricket Basketball and much more game. I also like to travel to the new places. I want to implement all the knowledge I have about Web Developement for the success of the organisation and mine.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('Education')">Education</p>
-                            <p class="tab-links" onclick="opentab('Certification')">Certification</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li>
-                                    <span> HTML/CSS : </span><br>
-                                    Designing Web Page/web Interfaces
-                                </li>
-                                <li>
-                                    <span>JAVASCRIPT : </span> <br>
-                                    Making page Functionable
-                                </li>
-                                <li>
-                                    <span>JAVA : </span>
-                                    <br>
-                                    Backend Data-Base
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Education">
-                            <ul>
-                                <li>
-                                    <span> 2012-2016 : </span><br>
-                                   B.Tech in Civil Engineering from U.T.U ,Dehradun(U.k)
-                                </li>
-                                <li>
-                                    <span>2010-2012 : </span> <br>
-                                    Intermediate with PCM+computer from D.S.S.School ,Deoria(U.P)
-                                </li>
-                                <li>
-                                    <span>2008-2010 : </span>
-                                    <br>
-                                    Highschool with Science strem+computer from Prestige Tutorial Deoria(U.P)
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Certification">
-                            <ul>
-                                <li>
-                                    <span> Best-Organizer: </span><br>
-                                    LOR from LIC India & USP India for organizing Biggest youth event of Uttarkhand
-                                </li>
-                                <li>
-                                    <span>Top Perfomer : </span> <br>
-                                   College Top Perfomer in Year 2016 in the filed of Game,Event and Education.
-                                </li>
-                                <li>
-                                    <span>Qualified GATE : </span>
-                                    <br>
-                                   In year 2018 and got sellectend in IIT Roorke,IIT Guwhati,NIT Silchar for M.Tech Program
-                                </li>
-                            </ul>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <!-- About Ended Here ! -->
-      <!--Tech Stack Started Here ! -->
-      <div id="Techstack">
-        <div class="container">
-           <h1 class="sub-title">
-            KNOWN TECH STACKS
-           </h1> 
-           <div class="services-list">
-           <div>
-            <img src="https://mozakir178.github.io/assets/java.png" alt="java">
-            <h2>JAVA</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/spring.png" alt="Spring Boot">
-            <h2>Spring Boot</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/api.png" alt="API">
-            <h2>API</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/sql-server.png" alt="SQL">
-            <h2>SQL</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/jdbc.png" alt="JDBC">
-            <h2>JDBC</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/java-script.png" alt="JavaScript">
-            <h2>JavaScript</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/html.png" alt="HTML">
-            <h2>HTML</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/css-3.png" alt="CSS">
-            <h2>CSS</h2>
-           </div>
-           <div>
-            <img src="https://mozakir178.github.io/assets/github.png" alt="GIT">
-            <h2>GIT</h2>
-           </div>
-           </div>
-        </div>
-      </div>
-       <!-- Tech Stack Ended Here ! -->
-       <!--Skills Started Here ! -->
-       <div id="skills">
-        <div class="container">
-            <h1 class="sub-title">
-                SKILLS
-               </h1> 
-               <div class="services-list">
-                <div>
-                 <img src="https://mozakir178.github.io/assets/dsa.png" alt="DSA">
-                 <h2>DSA</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/background.png" alt="Front End">
-                 <h2>Front End</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/backend.png" alt="Back End">
-                 <h2>Back End</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/fastlearn.jpg" alt="Fast Learner">
-                 <h2>Fast Learner</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/time.png" alt="Time Management">
-                 <h2>Time Management</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/teammang.png" alt="Team Management">
-                 <h2>Team Management</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/remote.jpg" alt="Remote Work">
-                 <h2>Remote Work</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/problem.jpg" alt="Problem Solving">
-                 <h2>Problem Solving</h2>
-                </div>
-                <div>
-                 <img src="https://mozakir178.github.io/assets/col.jpg" alt="Collaborative">
-                 <h2>Collaborative</h2>
-                </div>
-                </div>
-        </div>
-       </div>
-        <!--Skills Ended Here ! -->
-          <!--MY Work Started Here ! -->
-       <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="https://i0.wp.com/www.opindia.com/wp-content/uploads/2019/09/indianExpressLogo.png?resize=696%2C390&ssl=1" alt="Indian indianExpressLogo">
-                    <div class="layer">
-                        <h3>Indianexpress.com-clone</h3>
-                       
-                        <p>Indian Express Limited is an Indian news media publishing company. It publishes several widely circulated dailies, including The Indian Express and The Financial Express in English, the Loksatta in Marathi and the Jansatta in Hindi. </p>
-                        <a href="https://lighthearted-truffle-d27293.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://www.savethestudent.org/uploads/kfc4-1.jpg" alt="kfc">
-                    <div class="layer">
-                        <h3>kfc.co.in-clone</h3>
-                       
-                        
-                        <p>KFC is an American fast food restaurant chain headquartered in Louisville, Kentucky, that specializes in fried chicken. It is the world's second-largest restaurant chain after McDonald's, with 22,621 locations globally in 150 countries as of December 2019. The chain is a subsidiary of Yum!  </p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://toggl.com/blog/wp-content/uploads/2020/09/toggl-track_logotype_horizontal_pink_rgb-e1599116263835.png" alt="toggle track">
-                    <div class="layer">
-                        <h3>toggle.com-clone</h3>
-                        <p>Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in Tallinn, Estonia, that offers online time tracking and reporting services through their website along with mobile and desktop applications. Toggl Track tracks time blocks, optionally labeled with a task, a project, and tags. </p>
-                        <a href="https://deft-tarsier-8135bc.netlify.app/index.html"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div> 
-        <!--MY Work Ended Here ! -->  
-        <!--Contact Started Here ! -->
-       <div id="contact">
-        <div class="container">
-       <div class="row">
-        <div class="contact-left">
-            <h1 class="sub-title">
-                Contact Me
-            </h1>
-            <p><i class="fas fa-paper-plane"></i> avanishmanitripathi@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i>+91-9451260054</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-hackerrank"></i></a>
-            </div>
-            <a href="https://drive.google.com/file/d/1E5I-TTPvolMvRYOfp7iif8ChzfEgUgkN/view" download class="btn btn2">Download Resume</a>
-        </div>
-        <div class="contact-right">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required >
-                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-<button:type="submit" class="btn btn2">Submit</button>
+    
 
-            </form>
-            
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>AVANISH MANI TRIPATHI</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo"><div class="logo"><a href="#">Avanish <span>Tripathi</span></a></div></a>
         </div>
-        
-       </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">
+                <i class="uil uil-home"></i>Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav_icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#mskills" class="nav__link">
+                <i class="uil uil-file-alt nav_icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav_icon"></i> Tech Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link projects">
+                <i class="uil uil-lightbulb-alt nav_icon"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav_icon"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am
+            <span class="home__title-color">Avanish Tripathi</span><br />
+            Java Backend <br>Developer
+          </h1>
+
+          <a href="./media/Avanish_Tripathi_Resume.pdf" class="button" download>Resume</a>
         </div>
        
-       </div>
-        <!--Contact Ended Here ! -->
-        <div class="copyright">
-            <p><i class="fa-solid fa-handshake"></i>  AVANISH MANI TRIPATHI</p>
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/imavanishmani/" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/avanishmani" class="home__social-icon"><i class="bx bxl-github"></i></a>
         </div>
-</body>
+
+        <div class="home__img">
+          <img  src="./media/avanish.jpg" alt="" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about-container bd-grid">
+          <!-- <div class="about-img">
+            <img src="assets/img/Profile1.png" alt="" />
+          </div> -->
+
+          <div style="text-align: center">
+            <p class="about-text">
+              Aspiring Java Backend Developer, currently studying at Masai School. Collaborative, team player who is proficient in working with interdisciplinary teams and executing goal-oriented projects. Strongly interested in obtaining a Software Developer position to work on enhancing the product experience.
+            </p>
+            <br />
+            <p>
+              Drop a mail @ avanishmanitripathi@gmail.com
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="mskills">
+        <h2 class="section-title">Skills</h2>
+        <div class="mainskills">
+          <div>
+            <img
+            class="mskill-img"
+              src="https://portfolio-saravanakumarjn.vercel.app/static/media/html_5.e7638e36.svg"
+              alt=""
+            />
+            <h3 class="mskill-text">HTML</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://portfolio-saravanakumarjn.vercel.app/static/media/css_3.e7a9de36.svg"
+              alt=""
+            />
+            <h3 class="mskill-text">CSS</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://portfolio-saravanakumarjn.vercel.app/static/media/javascript.fd46ca41.svg"
+              alt=""
+            />
+            <h3 class="mskill-text">Javascript</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://qph.cf2.quoracdn.net/main-qimg-317f4ff0db8d0ba328fc6d627af72d89"
+              alt=""
+            />
+            <h3 class="mskill-text">Java</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://img.icons8.com/fluent/480/000000/mysql-logo.png"
+              alt=""
+            />
+            <h3 class="mskill-text">MySQL</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://logodix.com/logo/1614368.png"
+              alt=""
+            />
+            <h3 class="mskill-text">Spring Boot</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://cdn.freebiesupply.com/logos/large/2x/hibernate-logo-png-transparent.png"
+              alt=""
+            />
+            <h3 class="mskill-text">Hibernate</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://portfolio-saravanakumarjn.vercel.app/static/media/github-icon.04ed74f3.svg"
+              alt=""
+            />
+            <h3 class="mskill-text">Github</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <h3 class="mskill-text">DS & Algo</h3>
+          </div>
+          <div>
+            <img  class="mskill-img"
+              src="https://chiranjeev-thapliyal.vercel.app/svg/amazon-web-services.svg"
+              alt=""
+            />
+            <h3 class="mskill-text">AWS</h3>
+          </div>
+        </div>
+      </section>
+      <!-- tech stack -->
+
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-container bd-grid">
+          <div>
+            <h2 class="skills-subtitle">Front-end Skills</h2>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-html5 skills-icon"></i>
+                <span class="skills-name">HTML5</span>
+              </div>
+              <!-- <div class="skills-bar skills-html"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">75%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-css3 skills-icon"></i>
+                <span class="skills-name">CSS3</span>
+              </div>
+              <!-- <div class="skills-bar skills-css"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">70%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-javascript skills-icon"></i>
+                <span class="skills-name">JAVASCRIPT</span>
+              </div>
+              <!-- <div class="skills-bar skills-js"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">85%</span>
+              </div> -->
+            </div>
+           
+            
+           
+        
+          </div>
+          <div>
+            <h2 class="skills-subtitle">Back-end Skills</h2>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEu1lcFRg1AURe+DTSTOiBWIHaSELA1xQQmxg5RACSkhJWSh6M50YEqgBJwxyEL+dR6Co4HIT5yw5H/eue/d+z+CEz9y4vqwAgxuOS7uZX2MGCuAFzLOE4lPB5gwEoG/TWR5KMSqAy3qhVwJEG8T2RwC6QV4E0aG2BQFMm+ItRCLQzrpBajasynnDhFsc8QKAfGSJ3Jn04kVoIEI4avZ3pQb206sARpVx2CZJxJoqhRqkyxrwDDkmkCWJxINQy5KByubs2EFUPUu8VyWuFbl4iJ6f5DFvzwYhhx9R3JM3/Oq8aj62b9SNLhh4DpYlgYzjWalci3ZL6C+G9MfnGPkGkSlwaJ4krSro9aINPcQjBoDFagjcYiMQNAqIghgsMofZWUFqE7tlMs6hl+ndkxfu9gtoGL2FW727jVZjcUH0uoEe5iLYgSpEAEEJPEKQZZvMe+C9wL6EqKj0z37Zn8QoL4qYghemg8JXMIgPmpEVWJypK3W6+QUb9j8XKuC4SDqGlfbg7qIKnUNAk0OBZkQF51jE1yD8NWPX8GoN3ea3ERTLzcBUgJXhmj/Ml3Ibje7Iqyuij7D/1o/OeATuo7VGe7oSacAAAAASUVORK5CYII="/>
+                <span class="skills-name"> Java</span>
+              </div>
+              <!-- <div class="skills-bar skills-react"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">80%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAi9JREFUSEu1lc9x02AQxX+rXBL5gKkAd4CpIOYGDjM4FWAqiOnAVJBQAaGCiBkiOIoOTAd2B8lBJhfpMStbRkkkyz7km/GMR/r2vf3z9sl44mNPjE8rQWeoseA90DejB9wAM4nEjHma8p3E/FntaSQI32qEcb4GbSxUYmbwMY1txkDd8IjB8qdFZUAtQXiiS4MP+7RPYmqwEPSWsU0bCTpDXWCc7QNe3s2M1wc5vTS2y1oCb4sFXO0NLm6zgNHdD0s6Q/WzgK7/d5x7LQqHmpvxYh8Cwbc8Y3r3y+Zl3NGJJn+v7eIegasF4+tWcPHb3wtuZCTKiKrAZWw41LScw6aCusFKLAymWU5SB/QomYG6LllvdamkKoHL7WUZ5KUvr228a7sO36hXJlFbQedE2oCLxTI2X6rdzkDdTsioVE87Qc5pdVnaWFza6ZJpudFNM9i0KE15vm39q4Q+O3KiakK1KgqHiswKzyG9tlaP8p4HAVcGX6qL5fFFRbFNmmUqXhXeUnfcb0LOzJggPj0EP3ynQXWb/2e6Cpz5oklEy9hOS3zP9uCAY4mRGSPBHxPjR0mshh2lsQ1arcJJ1pdWNi1uBQnisk4AnnmQc474vNVNvX9ZQBRkdN2XJNw+oizfEG4aFxhd/05AUVm/bnfqh7nWdat1VGekYtjFYKunUS3uioBb9/G2PXA7QUya9qZVjoUJrtqw+hnPfMj+2TSRPFTRzhW0be+u71sr2BWo6d4/IUQTKH1yThUAAAAASUVORK5CYII="/>
+                <span class="skills-name">Spring Boot</span>
+              </div>
+              <!-- <div class="skills-bar skills-node"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">85%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAitJREFUSEu1VcF100AUnL++BOmAqQB3AFSAj2DzHqEC7ApiKrBcAUoFcSogB2y4ITowHaQDkoNELtqft1+7equ1ZMVAdFrpaf/8nT8zS3jkhx65Ph4McPKOxwPGkhkjrTC/+0rZQ5rrBTh5wyOlsCTCLCiYgfEp39LuEFA3wJiHUYQzIiRSgHGr7VoxEhCeymfGWmus7r7TdRtQK8CTKS8UsAQwdJtY40Pxja7kvQJfEMk/5rlhRloUOEdGNz5QAyB6y6cgfCbCqGoal2CMifDcbsrKEnPXrdA3QELARwcEYJFv6NKB1ADRhK+I8N7S8bNUSNwg5UQeLQDSPMfKdSsC0ELba0vbrtjSK7OuAeIps3e0rCSsGkoZ8zCOpMiZ61Yzkj9bOncKM+S5GvmGpPY+AOP20AANLQOFtdfttaPUCMHt7QTIczzrHWA15AsinNYiYKyKAmkc47f51g1gj9Y1QM0YqkqutcL8go7qXgDXWTjAek4MEcKA8eOfAFzBeMIzEC6syub5ltZmHXZ89Al804SbBWDCmS/pXoCGYwPvtwH4vxijksKX1iFHU94R8KJ2bOiDFjoac2KJDfEBA7+KDb1s+MAe1yRm2uWD8AR7SWt8YKLCzmcPQDpyQQYsPKDEBFmt8corjaRlSNilB8PO57PDB077JjFlbQJRl0iOiuuGciZsuDS0SZD5PrB0/OWFEyjIGE5piPa1wuy/XZkBztGvvXfy0RWDDfcz0UEoet1ecwAAAABJRU5ErkJggg=="/>
+                <span class="skills-name">Hibernate </span>
+              </div>
+              <!-- <div class="skills-bar skills-sql"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">65%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" alt="">
+                <span class="skills-name">SQL </span>
+              </div>
+              <!-- <div class="skills-bar skills-sql"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">65%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAg1JREFUSEvtlMFt20AQRd+nAsSmDmEqiNyB3QF1i6UAVgWxOrBKEFKB0wFTQXSI6BzlCqIOrFQQH0JCF+4EszGByLIhI4B88gIEDzs78/+fPyP2fLTn/LwU2Knw80qUDmwqcQFkZqxCoJ8kjAWrqlSRntpICRfVXH2H3h3YogmMOwkTxLm/w/hclZq01DYYdAd2XJVa+mU6sJn/TSwSY1SVytOhFTJGQN4kZEmgEIwQP6qKtyx0e/DeeuvvWj1YgNyybpezYGSCY8FRRNjhpppL6cBWglkQMUFi9KqaaTdlZfA1GMX6Stf/NmaDQTo0R78MougEph54h3xJwOWbmHFJwgiLchT1lWaO2qWE+P2qS51sMfCgFmmU6K8cvVhgYFMUk87qmss0ZYm4rec6vm+j7tCsaThqZdpmYJg/EjjVcVUq8964zo3or79p0TKt5xr7ncFM4sacFfysS3mf4tmy6cEHy9e/WXrDdpr8LsDZ84peJ3DbmuTRAk9NuhWXW3aYci7IJFbVXF82GBwObRKdY1zeR/GUoi5VtG5DRsK07c+GRC5PJzBzvYGiRbGrgA8g4gxxUq/5mL7mU9uH7VWRW5amOBufzjd3yRdx6Iz4l2IzWwflGNdNwjQa4NRGwVg+6KL7SONqELknM+hJvIsxxrX5sPk6SVh44sdYPu+y26X1/9y/MNip2t4l+gNzr+QZnGPKggAAAABJRU5ErkJggg=="/>
+                <span class="skills-name">AWS</span>
+              </div>
+              <!-- <div class="skills-bar skills-mongo"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">80%</span>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- <div>
+            <img src="assets/img/project3.jpg" alt="" class="skills-img" />
+          </div> -->
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-img">
+            <img src="https://www.savethestudent.org/uploads/kfc4-1.jpg" alt="" />
+            <p class="project-title">online.kfc.co.in -clone</p>
+            <p class="project-subtitle">
+                KFC is an American fast-food restaurant chain
+                headquartered in Louisville, Kentucky,that specializes in Fried chicken. <br />
+              <br />
+             
+              Collaborative project: Accomplished with a team
+              of 5 developers in 7days <br />
+        
+              <br />HTML | CSS | Javascript | Github <br/>
+              <br/>
+              Contribution:-Landing Page | Deals Page | Repo Management
+              <br/>
+            </p>
+            <div class="project-btns">
+              <a
+                href="http://github.com/sankarshandev98/for-stick-2556"
+                target="_blank"
+                class="small-btn button"
+              >
+                Code<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://symphonious-rolypoly-b8a660.netlify.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-img">
+            <img src="https://i0.wp.com/www.opindia.com/wp-content/uploads/2019/09/indianExpressLogo.png?resize=696%2C390&ssl=1" alt="" />
+            <p class="project-title">Indianexpress.com clone</p>
+            <p class="project-subtitle">
+              A news website that brings to users the latest news
+              from all around the world and performs various
+              functions like sign up, log out, subscribe, and much
+              more <br />
+              <br />
+              Collaborative project: Accomplished with a team
+              of 5 developers executed in 6 days
+              <br />
+              <br />HTML | CSS | Javascript | Github <br/>
+              <br/>
+              Contribution:-Landing Page | India News | Repo Management
+            </p>
+            <div class="project-btns">
+              <a
+                href="https://github.com/Raj4709267/Web-19-IndianExpress"
+                target="_blank"
+                class="small-btn button"
+              >
+                Code<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://lighthearted-truffle-d27293.netlify.app/index.html"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!--===== FOOTER + CONTACT=====-->
+    <footer class="footer section" id="contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="footer-title">AVANISH MANI TRIPATHI</p>
+      <div class="footer-social">
+        <a
+          href="https://www.linkedin.com/in/imavanishmani/"
+          target="_blank"
+          class="footer-icon"
+          ><i class="bx bxl-linkedin">
+            <br />
+            LinkedIn</i
+          ></a
+        >
+        <a
+          href="mailto:avanishmanitripathi@gmail.com"
+          target="_blank"
+          class="footer-icon"
+          ><i class="bx bx-mail-send">
+            <br />
+            E-mail</i
+          ></a
+        >
+        <a href="tel:+919451269954" target="_blank" class="footer-icon"
+          ><i class="bx bx-phone">
+            <br />
+            Phone</i
+          ></a
+        >
+      </div>
+      <p>&#169; 2022 copyright all right reserved</p>
+    </footer>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="index.js"></script>
+  </body>
 </html>
-<script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script src="https://kit.fontawesome.com/1796892842.js" crossorigin="anonymous"></script>
-<script>
-    var sidemenu=document.getElementById("sidemenu");
-    function openmenu(){
-sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";  
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz87frn11AqQnrNkC6DJ8-m6KhpobGzfzU5yIZT6Pw7nlqV7ODTKiEReIXWqRN6JTA8/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
