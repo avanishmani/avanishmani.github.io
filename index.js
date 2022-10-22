@@ -80,4 +80,7 @@ sr.reveal( ".skills-data", { interval: 100 } );
 sr.reveal( ".project-img", { interval: 200 } );
 
 // SCROLL CONTACT
+
+
 sr.reveal(".contact-input", { interval: 200 });
+
