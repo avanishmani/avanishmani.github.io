@@ -67,7 +67,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
 }
@@ -504,7 +504,7 @@ img.man-icons {
     row-gap: 2rem;
   }
   .home__img {
-    width: 200px;
+    width: 100%;
   }
   .mainskills {
     width: 100%;
