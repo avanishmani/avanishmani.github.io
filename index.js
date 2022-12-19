@@ -84,3 +84,6 @@ sr.reveal( ".project-img", { interval: 200 } );
 
 sr.reveal(".contact-input", { interval: 200 });
 
+document.querySelector("#resume_view").addEventListener("click",function(){
+    window.open("./Avanish_Tripathi_Resume.pdf","_blank");
+});
