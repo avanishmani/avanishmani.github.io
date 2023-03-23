@@ -652,3 +652,85 @@ img.man-icons {
     margin: auto;
   }
 }
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://unpkg.com/bag.css@1.0.12/dist/bag.fixed.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css);
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+.bag > h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+
+@media(min-width:992px){.bag.fixed{width: 784px;}}
+
+pre {
+    background: white;
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+    overflow: auto;
+    border-radius: 3px;
+    color: #373727;
+}
+
+.calendar {
+  width: 95%;
+}
+
+/* stats */
+
+.center-h1{
+  text-align: center;
+  color: var(--first-color);
+}
+section#counter-stats {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  color: #56617A;
+ 
+}
+.row{
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.stats {
+text-align: center;
+font-size: 3rem;
+font-weight: 700;
+/* font-family: 'Montserrat', sans-serif; */
+}
+
+.stats .fa {
+color: #56617A;
+font-size: 3rem;
+}
+
+
+
+.git-stat-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+
+}
+
+
+.second-project{
+  margin-top: 25px;
+}
+
+.margin-purpusegithub{
+  margin-bottom: 50px;
+}
