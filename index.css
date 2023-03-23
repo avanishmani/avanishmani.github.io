@@ -1,3 +1,4 @@
+/*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 
@@ -67,7 +68,7 @@ a {
 }
 
 img {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -166,19 +167,7 @@ header{
   top: 2rem;
   background-color: var(--first-color);
 }
-.navbar .logo a {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
-}
-.navbar .logo a span {
-  color: crimson;
-  transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span {
-  color: #000;
-}
+
 .nav__logo {
   color: var(--second-color);
 }
@@ -199,6 +188,7 @@ header{
   top: 2rem;
   background-color: var(--first-color);
 }
+
 
 /*=== Show menu ===*/
 .show {
@@ -262,7 +252,7 @@ header{
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: hsl(var(--hue-color), 47%, 60%);
+  background-color: #7169c9;
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -417,7 +407,6 @@ img.man-icons {
   gap: 2rem;
   max-width: 1024px;
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* column-gap: 2rem; */
   width: calc(100% - 2rem);
@@ -504,7 +493,7 @@ img.man-icons {
     row-gap: 2rem;
   }
   .home__img {
-    width: 100%;
+    width: 200px;
   }
   .mainskills {
     width: 100%;
