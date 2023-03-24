@@ -1,608 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" style="border-radius: 50%;" href="./avanish.jpg">
-    <link rel="stylesheet" href="index.css" />
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avanish Tripathi Portfolio</title>
+	<link rel="shortcut icon" type="image/png" href="./resources/avanish.jpg">
+	<!---- Box Icons ---->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+		integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--- Github calender --->
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+	<!--- Bootstrap CSS --->
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/index.css">
+</head>
 
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+<body>
 
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>AVANISH MANI TRIPATHI</title>
-  </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo"><div class="logo"><a href="#">Avanish <span>Tripathi</span></a></div></a>
-        </div>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">
-                <i class="uil uil-home"></i>Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav_icon"></i> About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#mskills" class="nav__link">
-                <i class="uil uil-file-alt nav_icon"></i> Skills
-              </a>
-            </li>
-            <!-- <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav_icon"></i>Skills
-              </a>
-            </li> -->
-            <li class="nav__item">
-              <a href="#projects" class="nav__link projects">
-                <i class="uil uil-lightbulb-alt nav_icon"></i>Projects
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav_icon"></i> Contact
-              </a>
-            </li>
-             <li class="nav__item">
-              <a href="./Avanish_Tripathi_Resume.pdf" class="nav__link" id="resume_view" download>
-                <i class="uil uil-message nav_icon"></i> Resume
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am
-            <span class="home__title-color">Avanish Tripathi</span><br />
-            Java Backend <br>Developer
-          </h1>
-
-          <a href="./Avanish_Tripathi_Resume.pdf" class="button" download>Resume</a>
-        </div>
-       
-        <div class="home__social">
-          <a href="https://www.linkedin.com/in/imavanishmani/" class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/avanishmani" class="home__social-icon" target="_blank"><i class="bx bxl-github"></i></a>
-        </div>
-
-        <div class="home__img">
-          <img  src="./avanish.jpg" alt="" />
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about-container bd-grid">
-          <!-- <div class="about-img">
-            <img src="assets/img/Profile1.png" alt="" />
-          </div> -->
-
-          <div style="text-align: center">
-            <p class="about-text">
-              Aspiring Java Backend Developer, currently studying at Masai School. Collaborative, team player who is proficient in working with interdisciplinary teams and executing goal-oriented projects. Strongly interested in obtaining a Software Developer position to work on enhancing the product experience.
-            </p>
-            <br />
-            <p>
-              Drop a mail @ avanishmanitripathi@gmail.com
-              <i
-                style="color: #4070f4; font-size: 1.2rem; cursor: pointer"
-                class="bx bx-copy"
-                id="copy"
-              ></i>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="mskills">
-        <h2 class="section-title">Skills</h2>
-        <div class="mainskills">
-          <div>
-            <img
-            class="mskill-img"
-              src="https://portfolio-saravanakumarjn.vercel.app/static/media/html_5.e7638e36.svg"
-              alt=""
-            />
-            <h3 class="mskill-text">HTML</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://portfolio-saravanakumarjn.vercel.app/static/media/css_3.e7a9de36.svg"
-              alt=""
-            />
-            <h3 class="mskill-text">CSS</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://portfolio-saravanakumarjn.vercel.app/static/media/javascript.fd46ca41.svg"
-              alt=""
-            />
-            <h3 class="mskill-text">Javascript</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://qph.cf2.quoracdn.net/main-qimg-317f4ff0db8d0ba328fc6d627af72d89"
-              alt=""
-            />
-            <h3 class="mskill-text">Java</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://img.icons8.com/fluent/480/000000/mysql-logo.png"
-              alt=""
-            />
-            <h3 class="mskill-text">MySQL</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://logodix.com/logo/1614368.png"
-              alt=""
-            />
-            <h3 class="mskill-text">Spring Boot</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://cdn.freebiesupply.com/logos/large/2x/hibernate-logo-png-transparent.png"
-              alt=""
-            />
-            <h3 class="mskill-text">Hibernate</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://portfolio-saravanakumarjn.vercel.app/static/media/github-icon.04ed74f3.svg"
-              alt=""
-            />
-            <h3 class="mskill-text">Github</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="data:image/png;base64,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"
-              alt=""
-            />
-            <h3 class="mskill-text">DS & Algo</h3>
-          </div>
-          <div>
-            <img  class="mskill-img"
-              src="https://yt3.ggpht.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj"
-              alt=""
-            />
-            <h3 class="mskill-text">VS Code</h3>
-          </div>
-        </div>
-      </section> 
-      <!-- tech stack -->
-
-      <!-- <section class="skills section" id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-
-        <div class="skills-container bd-grid">
-          <div>
-            <h2 class="skills-subtitle">Front-end Skills</h2>
-            <div class="skills-data">
-              <div class="skills-names">
-                <i class="bx bxl-html5 skills-icon"></i>
-                <span class="skills-name">HTML5</span>
-              </div>
-              <!-- <div class="skills-bar skills-html"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">75%</span>
-              </div> 
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <i class="bx bxl-css3 skills-icon"></i>
-                <span class="skills-name">CSS3</span>
-              </div>
-              <!-- <div class="skills-bar skills-css"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">70%</span>
-              </div> 
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <i class="bx bxl-javascript skills-icon"></i>
-                <span class="skills-name">JAVASCRIPT</span>
-              </div>
-              <!-- <div class="skills-bar skills-js"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">85%</span>
-              </div> 
-            </div>
-           
-            
-           
-        
-          </div>
-          <div>
-            <h2 class="skills-subtitle">Back-end Skills</h2>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEu1lcFRg1AURe+DTSTOiBWIHaSELA1xQQmxg5RACSkhJWSh6M50YEqgBJwxyEL+dR6Co4HIT5yw5H/eue/d+z+CEz9y4vqwAgxuOS7uZX2MGCuAFzLOE4lPB5gwEoG/TWR5KMSqAy3qhVwJEG8T2RwC6QV4E0aG2BQFMm+ItRCLQzrpBajasynnDhFsc8QKAfGSJ3Jn04kVoIEI4avZ3pQb206sARpVx2CZJxJoqhRqkyxrwDDkmkCWJxINQy5KByubs2EFUPUu8VyWuFbl4iJ6f5DFvzwYhhx9R3JM3/Oq8aj62b9SNLhh4DpYlgYzjWalci3ZL6C+G9MfnGPkGkSlwaJ4krSro9aINPcQjBoDFagjcYiMQNAqIghgsMofZWUFqE7tlMs6hl+ndkxfu9gtoGL2FW727jVZjcUH0uoEe5iLYgSpEAEEJPEKQZZvMe+C9wL6EqKj0z37Zn8QoL4qYghemg8JXMIgPmpEVWJypK3W6+QUb9j8XKuC4SDqGlfbg7qIKnUNAk0OBZkQF51jE1yD8NWPX8GoN3ea3ERTLzcBUgJXhmj/Ml3Ibje7Iqyuij7D/1o/OeATuo7VGe7oSacAAAAASUVORK5CYII="/>
-                <span class="skills-name"> Java</span>
-              </div>
-              <!-- <div class="skills-bar skills-react"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">80%</span>
-              </div> 
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAi9JREFUSEu1lc9x02AQxX+rXBL5gKkAd4CpIOYGDjM4FWAqiOnAVJBQAaGCiBkiOIoOTAd2B8lBJhfpMStbRkkkyz7km/GMR/r2vf3z9sl44mNPjE8rQWeoseA90DejB9wAM4nEjHma8p3E/FntaSQI32qEcb4GbSxUYmbwMY1txkDd8IjB8qdFZUAtQXiiS4MP+7RPYmqwEPSWsU0bCTpDXWCc7QNe3s2M1wc5vTS2y1oCb4sFXO0NLm6zgNHdD0s6Q/WzgK7/d5x7LQqHmpvxYh8Cwbc8Y3r3y+Zl3NGJJn+v7eIegasF4+tWcPHb3wtuZCTKiKrAZWw41LScw6aCusFKLAymWU5SB/QomYG6LllvdamkKoHL7WUZ5KUvr228a7sO36hXJlFbQedE2oCLxTI2X6rdzkDdTsioVE87Qc5pdVnaWFza6ZJpudFNM9i0KE15vm39q4Q+O3KiakK1KgqHiswKzyG9tlaP8p4HAVcGX6qL5fFFRbFNmmUqXhXeUnfcb0LOzJggPj0EP3ynQXWb/2e6Cpz5oklEy9hOS3zP9uCAY4mRGSPBHxPjR0mshh2lsQ1arcJJ1pdWNi1uBQnisk4AnnmQc474vNVNvX9ZQBRkdN2XJNw+oizfEG4aFxhd/05AUVm/bnfqh7nWdat1VGekYtjFYKunUS3uioBb9/G2PXA7QUya9qZVjoUJrtqw+hnPfMj+2TSRPFTRzhW0be+u71sr2BWo6d4/IUQTKH1yThUAAAAASUVORK5CYII="/>
-                <span class="skills-name">Spring Boot</span>
-              </div>
-              <!-- <div class="skills-bar skills-node"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">85%</span>
-              </div> 
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAitJREFUSEu1VcF100AUnL++BOmAqQB3AFSAj2DzHqEC7ApiKrBcAUoFcSogB2y4ITowHaQDkoNELtqft1+7equ1ZMVAdFrpaf/8nT8zS3jkhx65Ph4McPKOxwPGkhkjrTC/+0rZQ5rrBTh5wyOlsCTCLCiYgfEp39LuEFA3wJiHUYQzIiRSgHGr7VoxEhCeymfGWmus7r7TdRtQK8CTKS8UsAQwdJtY40Pxja7kvQJfEMk/5rlhRloUOEdGNz5QAyB6y6cgfCbCqGoal2CMifDcbsrKEnPXrdA3QELARwcEYJFv6NKB1ADRhK+I8N7S8bNUSNwg5UQeLQDSPMfKdSsC0ELba0vbrtjSK7OuAeIps3e0rCSsGkoZ8zCOpMiZ61Yzkj9bOncKM+S5GvmGpPY+AOP20AANLQOFtdfttaPUCMHt7QTIczzrHWA15AsinNYiYKyKAmkc47f51g1gj9Y1QM0YqkqutcL8go7qXgDXWTjAek4MEcKA8eOfAFzBeMIzEC6syub5ltZmHXZ89Al804SbBWDCmS/pXoCGYwPvtwH4vxijksKX1iFHU94R8KJ2bOiDFjoac2KJDfEBA7+KDb1s+MAe1yRm2uWD8AR7SWt8YKLCzmcPQDpyQQYsPKDEBFmt8corjaRlSNilB8PO57PDB077JjFlbQJRl0iOiuuGciZsuDS0SZD5PrB0/OWFEyjIGE5piPa1wuy/XZkBztGvvXfy0RWDDfcz0UEoet1ecwAAAABJRU5ErkJggg=="/>
-                <span class="skills-name">Hibernate </span>
-              </div>
-              <!-- <div class="skills-bar skills-sql"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">65%</span>
-              </div> 
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="https://assets.stickpng.com/thumbs/58481057cef1014c0b5e4951.png" alt="">
-                <span class="skills-name">SQL </span>
-              </div>
-              <!-- <div class="skills-bar skills-sql"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">65%</span>
-              </div>
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAg1JREFUSEvtlMFt20AQRd+nAsSmDmEqiNyB3QF1i6UAVgWxOrBKEFKB0wFTQXSI6BzlCqIOrFQQH0JCF+4EszGByLIhI4B88gIEDzs78/+fPyP2fLTn/LwU2Knw80qUDmwqcQFkZqxCoJ8kjAWrqlSRntpICRfVXH2H3h3YogmMOwkTxLm/w/hclZq01DYYdAd2XJVa+mU6sJn/TSwSY1SVytOhFTJGQN4kZEmgEIwQP6qKtyx0e/DeeuvvWj1YgNyybpezYGSCY8FRRNjhpppL6cBWglkQMUFi9KqaaTdlZfA1GMX6Stf/NmaDQTo0R78MougEph54h3xJwOWbmHFJwgiLchT1lWaO2qWE+P2qS51sMfCgFmmU6K8cvVhgYFMUk87qmss0ZYm4rec6vm+j7tCsaThqZdpmYJg/EjjVcVUq8964zo3or79p0TKt5xr7ncFM4sacFfysS3mf4tmy6cEHy9e/WXrDdpr8LsDZ84peJ3DbmuTRAk9NuhWXW3aYci7IJFbVXF82GBwObRKdY1zeR/GUoi5VtG5DRsK07c+GRC5PJzBzvYGiRbGrgA8g4gxxUq/5mL7mU9uH7VWRW5amOBufzjd3yRdx6Iz4l2IzWwflGNdNwjQa4NRGwVg+6KL7SONqELknM+hJvIsxxrX5sPk6SVh44sdYPu+y26X1/9y/MNip2t4l+gNzr+QZnGPKggAAAABJRU5ErkJggg=="/>
-                <span class="skills-name">AWS</span>
-              </div>
-              <!-- <div class="skills-bar skills-mongo"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">80%</span>
-              </div> 
-            </div>
-            <div class="skills-data">
-              <div class="skills-names">
-                <img class="skills-icon" src="https://assets.stickpng.com/thumbs/62cc1b51150d5de9a3dad5f8.png"/>
-                <span class="skills-name">Postman</span>
-              </div>
-              <!-- <div class="skills-bar skills-mongo"></div> -->
-              <!-- <div>
-                <span class="skills-percentage">80%</span>
-              </div> 
-            </div>
-          </div>
-
-          <!-- <div>
-            <img src="assets/img/project3.jpg" alt="" class="skills-img" />
-          </div> 
-        </div>
-      </section> -->
-
-<!-- Here stats statrts -->
-<h1 class="center-h1" >Statistics</h1>
-<section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-lg-3 stats">
-				<i class="fa fa-code" aria-hidden="true"></i>
-				<div class="counting" data-count="900000">1200+</div>
-				<h5>Hours of coding</h5>
-			</div>
-
-			<div class="col-lg-3 stats">
-				<i class="fa fa-check" aria-hidden="true"></i>
-				<div class="counting" data-count="280">5</div>
-				<h5>Projects done</h5>
-			</div>
-
-			<div class="col-lg-3 stats">
-				<i class="fa fa-user" aria-hidden="true"></i>
-				<div class="counting" data-count="75">350+</div>
-				<h5>Commits on Github</h5>
-			</div>
-
-			<div class="col-lg-3 stats">
-				<i class="fa fa-coffee" aria-hidden="true"></i>
-				<div class="counting" data-count="999">300+</div>
-				<h5>Hours on DSA</h5>
-			</div>
-
-
-		</div>
-		<!-- end row -->
+	<!------Preloader Start--------->
+	<div class="preloader">
+		<div></div>
 	</div>
-	<!-- end container -->
+	<!------Preloader End--------->
 
-</section>
-      <!--Git Status --> 
-      <h1 class="center-h1 margin-purpusegithub" >My GitHub Calender and Statistics</h1>
-    <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img  src="https://github-profile-trophy.vercel.app/?username=avanishmani" alt="avanishmani" /></a> </p>
-  
-  
-  
-  
-  <p align="center"><img align="center"  src="https://github-readme-stats.vercel.app/api/top-langs?username=avanishmani&show_icons=true&locale=en&layout=compact" alt="avanishmani" /></p>
-  
-  <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=avanishmani&show_icons=true&locale=en" alt="avanishmani" /></p>
-  
-  <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=avanishmani&" alt="avanishmani" /></p>
-      <div class="calendar" style="width: 80%;">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-          
- 
- 
-    </div>
-<!-- stats from github -->
+	<!----Navbar Start---->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
+			<!-- Brand -->
+			<a class="navbar-brand" href="/">
+				<div class="cube">
+					<div class="top"></div>
+					<div>
+						<span style="--i:0"></span>
+						<span style="--i:1"></span>
+						<span style="--i:2"></span>
+						<span style="--i:3"></span>
+					</div>
+				</div>
+			</a>
 
-<!-- <p align="center" class="git-stat-center">
-  
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=avanishmani&show_icons=true&locale=en&layout=compact&theme=dark" alt="avanishmani" />
- 
- </p> -->
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<i class='bx bx-menu'></i>
+			</button>
+
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link active" data-scroll-nav="0" href="#"><i class='bx bx-home-alt'></i> Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll-nav="1" href="#"><i class='bx bx-user'></i> About Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll-nav="2" href="#"><i class='bx bx-wrench'></i> Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll-nav="3" href="#"><i class='bx bx-carousel'></i> Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-scroll-nav="4" href="#"><i class='bx bx-envelope'></i> Contact &
+							Resume</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!----Navbar End------>
+
+	<!----Home Section Start ----->
+	<section class="home d-flex align-items-center" id="home" data-scroll-index="0">
+		<div class="container">
+			<p>Hi, I'm a</p>
+			<h1>Java Backend Developer</h1>
+			<div class="home-btn">
+				<a href="https://drive.google.com/file/d/160jq8IufdIz4gG-75q5sR7YZNYops-6b/view?usp=sharing"
+					target="_blank" title="Have a look at my resume" class="btn btn-1">Resume</a>
+			</div>
+		</div>
+		<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path class="path" fill="#0099ff" fill-opacity="1"
+				d="M0,128L80,117.3C160,107,320,85,480,96C640,107,800,149,960,160C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+			</path>
+		</svg>
+	</section>
+	<!----Home Section End ----->
+
+	<!----About Me Section Start----->
+	<section class="about-me section-padding" id="about_me" data-scroll-index="1">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>About <span>Me</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row-2">
+				<img src="./resources/avanish.jpg" alt="Profile" title="My profile photo" class="profile">
+				<div class="about-text">
+					<h2>I'm Avanish Mani Tripathi</h2>
+					<div class="wrapper">
+						<h1 class="static-text">Skilled in </h1>
+						<ul class="skills">
+							<li><span>Backend development</span></li>
+							<li><span>Spring Boot</span></li>
+							<li><span>Hibernet</span></li>
+							<li><span>MySQL</span></li>
+						</ul>
+					</div>
+
+					<p>Aspiring Java Backend Developer having a problem-solving mindset with a positive attitude and a
+						willingness to learn new technologies. I am looking for a hopeful role in a company where I can
+						utilize my skills and experience to contribute to the success of the team and the organization.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!----About Me Section End----->
 
 
-    <!--Git Status done--> 
+	<!----Skills Section Start----->
+	<section class="skills section-padding" id="skills" data-scroll-index="2">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>Technical <span>Skills</span></h2>
+						<h3 align="center">Tools and Technologies</h3>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="tools_and_tech">
+					<a href="https://www.java.com" target="_blank" title="Java">
+						<img src="resources/icons/java.svg" alt="java" />
+					</a>
+					<a href="https://www.mysql.com/" target="_blank" title="MySQL">
+						<img src="resources/icons/mysql.svg" alt="mysql" />
+					</a>
+					<a href="https://spring.io/" target="_blank" title="Spring">
+						<img src="resources/icons/spring.svg" alt="spring" />
+					</a>
+					<a href="https://firebase.google.com/" target="_blank" title="Firebase">
+						<img src="resources/icons/firebase-icon.svg" alt="firebase" />
+					</a>
+					<a href="https://git-scm.com/" target="_blank" title="Git">
+						<img src="resources/icons/git.svg" alt="git" />
+					</a>
+					<a href="https://aws.amazon.com" target="_blank" title="AWS">
+						<img src="resources/icons/aws.svg" alt="aws" />
+					</a>
+					<a href="https://heroku.com" target="_blank" title="Heroku">
+						<img src="resources/icons/heroku.svg" alt="heroku" />
+					</a>
 
-      <!--===== WORK =====-->
-      <section class="projects section" id="projects">
-        <h2 class="section-title">Projects</h2>
+					<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+						title="JavaScript">
+						<img src="resources/icons/javascript.svg" alt="javascript" />
+					</a>
+					<a href="https://www.w3.org/html/" target="_blank" title="HTML5">
+						<img src="resources/icons/html5.svg" alt="html5" />
+					</a>
+					<a href="https://www.w3schools.com/css/" target="_blank" title="CSS3">
+						<img src="resources/icons/css3.svg" alt="css3" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!----Skills Section End----->
 
-        <div class="project-container">
-          <div class="project-img">
-            <img src="https://www.savethestudent.org/uploads/kfc4-1.jpg" alt="" />
-            <p class="project-title">online.kfc.co.in -clone</p>
-            <p class="project-subtitle">
-                KFC is an American fast-food restaurant chain
-                headquartered in Louisville, Kentucky,that specializes in Fried chicken. <br />
-              <br />
-             
-              Collaborative project: Accomplished with a team
-              of 5 developers in 7days <br />
-        
-              <br />HTML | CSS | Javascript | Github <br/>
-              <br/>
-              Contribution:-Landing Page | Deals Page | Repo Management
-              
-            </p>
-            <div class="project-btns">
-              <a
-                href="http://github.com/sankarshandev98/for-stick-2556"
-                target="_blank"
-                class="small-btn button"
-              >
-                Code<i class="bx bxl-github"></i>
-              </a>
-              <a
-                href="https://symphonious-rolypoly-b8a660.netlify.app/"
-                target="_blank"
-                class="small-btn button"
-              >
-                Live<i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
 
-          <div class="project-img">
-            <img src="https://i0.wp.com/www.opindia.com/wp-content/uploads/2019/09/indianExpressLogo.png?resize=696%2C390&ssl=1" alt="" />
-            <p class="project-title">Indianexpress.com clone</p>
-            <p class="project-subtitle">
-              A news website that brings to users the latest news
-              from all around the world and performs various
-              functions like sign up, log out, subscribe, and much
-              more <br />
-              <br />
-              Collaborative project: Accomplished with a team
-              of 5 developers executed in 6 days
-              <br />
-              <br />HTML | CSS | Javascript | Github <br/>
-              <br/>
-              Contribution:-Landing Page | India News | Repo Management
-            </p>
-            <div class="project-btns">
-              <a
-                href="https://github.com/Raj4709267/Web-19-IndianExpress"
-                target="_blank"
-                class="small-btn button"
-              >
-                Code<i class="bx bxl-github"></i>
-              </a>
-              <a
-                href="https://lighthearted-truffle-d27293.netlify.app/index.html"
-                target="_blank"
-                class="small-btn button"
-              >
-                Live<i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-          </div>
-          <div class="project-container second-project">
-          <!-- <div class="project-img">
-            <img src="https://i.pcmag.com/imagery/reviews/02lgJEbLOH2Y2tDfRmfiNl6-20.fit_scale.size_1028x578.v1604605476.png"  alt="" />
-            <p class="project-title">Toggl-track.com -clone</p>
-            <p class="project-subtitle">
-              Toggl Track is a time tracking software operated by Toggl OÜ, headquartered in Tallinn, Estonia, that offers online time tracking and reporting services through their website along with mobile and desktop applications. Toggl Track tracks time blocks, optionally labeled with a task, a project, and tags. <br />
-              <br />
-             
-              Collaborative project: Accomplished with a team
-              of 5 developers in 7days <br />
-        
-              <br />HTML | CSS | Javascript | Github <br/>
-              <br/>
-              Contribution:-Key Feature | Book A Demo | |Pricing | Repo Management 
-             
-            </p>
-            <div class="project-btns">
-              <a
-                href="https://github.com/avanishmani/toggl-track--clone"
-                target="_blank"
-                class="small-btn button"
-              >
-                Code<i class="bx bxl-github"></i>
-              </a>
-              <a
-                href="https://celebrated-bonbon-6262a7.netlify.app/"
-                target="_blank"
-                class="small-btn button"
-              >
-                Live<i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div> -->
-          <div class="project-img">
-            <img src="https://www.digitalindiagov.in/wp-content/uploads/2021/06/maxresdefault.jpg" alt="" />
-            <p class="project-title">MGNREGA</p>
-            <p class="project-subtitle">
-              Mahatma Gandhi National Rural Employment Guarantee Act 2005 or MNREGA, earlier known as the National Rural Employment Guarantee Act or NREGA, is an Indian labour law and social security measure that aims to guarantee the 'right to work'. <br />
-              <br />
-             
-              Solo Console Based project developers in 7days <br />
-        
-              <br />JAVA | JDBC | HIBERNATE | GIT | MySQL | JPA With Hibernate 
-              
-            </p>
-            <div class="project-btns">
-              <a
-                href="https://github.com/avanishmani/Avanish_-MGNREGA"
-                target="_blank"
-                class="small-btn button"
-              >
-                Code<i class="bx bxl-github"></i>
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1EVqSN1ankbEXnZPW-fH_CBciRYozQUeS/view"
-                target="_blank"
-                class="small-btn button"
-              >
-                Video<i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-          
-          
-          <div class="project-img">
-            <img src="./marrs-bank-logo.png" alt="" />
-            <p class="project-title">MARRS Bank</p>
-            <p class="project-subtitle">
-              An developement of RESTful API for an Online Payment Wallet application. This API performs all the fundamental CRUD operations of any Online Wallet Banking platform with user validation at every step. <br />
-              <br />
-             
-              An Collabrative Project Consisting Of the 5 Developer Depicting the implementation of the payemnt wallet online transaction platform <br />
-        
-              <br />JAVA | JDBC | HIBERNATE | GIT | SPRING Boot | MySql | Jpa-Hibernate | Lombok | Swagger UI
-              
-            </p>
-            <div class="project-btns">
-              <a
-                href="https://github.com/mazidul36i/marrsbank"
-                target="_blank"
-                class="small-btn button"
-              >
-                Code<i class="bx bxl-github"></i>
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1nGFgKzekZyN2rz5rxfeD6Vmuu4fk23xq/view?usp=sharing"
-                target="_blank"
-                class="small-btn button"
-              >
-                Video<i class="bx bx-link-external"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+	<!----Github Calender & Statistics Start----->
+	<section class="github-calender section-padding">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>Github <span>Calender</span></h2>
+						<!-- <h3 align="center">Tools and Technologies</h3> -->
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="calendar" id="github-calender">
+					Loading Github Calender...
+				</div>
+			</div>
+		</div>
+	</section>
+	<!----Github Calender & Statistics End----->
 
-       <!--===== FOOTER + CONTACT=====-->
-    <footer class="footer section" id="contact">
-      <h2 class="section-title">Get in touch</h2>
-      <p class="footer-title">AVANISH MANI TRIPATHI</p>
-      <div class="footer-social">
-        <a
-          href="https://www.linkedin.com/in/imavanishmani/"
-          target="_blank"
-          class="footer-icon"
-          ><i style="font-size: 148%;" class="bx bxl-linkedin">
-            <br />
-            LinkedIn</i
-          ></a
-        >
-        <a
-          href="mailto:avanishmanitripathi@gmail.com"
-          target="_blank"
-          class="footer-icon"
-          ><i style="font-size: 148%;" class="bx bx-mail-send">
-            <br />
-            avanishmanitripathi@gmail.com</i
-          ></a
-        >
-        <a href="tel:+919451269954" target="_blank" class="footer-icon"
-          ><i style="font-size: 148%;" class="bx bx-phone">
-            <br />
-            +91-9451269954</i
-          ></a
-        >
-      </div>
-      <!-- <p>&#169; 2022 copyright all right reserved</p> -->
-    </footer>
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+	<!-------Projects Section Start------>
+	<section class="projects section-padding" id="projects" data-scroll-index="3">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>Featured <span>Projects</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="projects-container">
 
-    <!--===== MAIN JS =====-->
-    <script src="index.js"></script>
+				<div class="project-item">
+					<div class="image-section">
+						<img src="./resources/marrs_bank.png" alt="MARRS Bank">
+					</div>
+					<div class="project-info">
+						<h1>MARRS Bank</h1>
+						<div class="links">
+							<a target="_blank" href="https://github.com/mazidul36i/marrsbank">
+								<i class='bx bxl-github'></i> Github repo
+							</a>
+							<a target="_blank"
+								href="https://drive.google.com/file/d/1nGFgKzekZyN2rz5rxfeD6Vmuu4fk23xq/view?usp=sharing">
+								<i class='bx bx-play-circle'></i> Presentation Video
+							</a>
+						</div>
+						<p>This is the MARRS bank, a RESTful API for an Online Payment Wallet application. This API
+							performs
+							all the fundamental CRUD operations of any Online Wallet Banking platform with user
+							validation at every step.</p>
+						<div class="tech-stacks">
+							<h4>Tech Stacks</h4>
+							<div>
+								<a href="https://www.java.com/" target="_blank" title="Java">
+									<img src="resources/icons/java.svg" alt="java" />
+								</a>
+								<a href="https://spring.io/" target="_blank" title="SpringBoot">
+									<img src="resources/icons/spring.svg" alt="spring" />
+								</a>
+								<a href="https://www.mysql.com/" target="_blank" title="MySQL">
+									<img src="resources/icons/mysql.svg" alt="mysql" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-  </script>
-  <script>
-    // GitHubCalendar(".calendar", "avanishmani");
+				<div class="project-item">
+					<div class="image-section">
+						<img src="./resources/Manrega.jpg" alt="Manrega screenshot">
+					</div>
+					<div class="project-info">
+						<h1>Manrega</h1>
+						<div class="links">
+							<a target="_blank" href="https://github.com/avanishmani/Avanish_-MGNREGA">
+								<i class='bx bxl-github'></i> Github repo
+							</a>
+							<a target="_blank"
+								href="https://drive.google.com/file/d/1EVqSN1ankbEXnZPW-fH_CBciRYozQUeS/view">
+								<i class='bx bx-play-circle'></i> Presentation Video
+							</a>
+						</div>
+						<p>Mahatma Gandhi National Rural Employment Guarantee Act 2005 or MNREGA, earlier known as the National Rural Employment Guarantee Act or NREGA, is an Indian labour law and social security measure that aims to guarantee the 'right to work'.</p>
+						<div class="tech-stacks">
+							<h4>Tech Stacks</h4>
+							<div>
+								<a href="https://www.java.com/" target="_blank" title="Java">
+									<img src="resources/icons/java.svg" alt="java" />
+								</a>
+								<a href="https://www.mysql.com/" target="_blank" title="MySQL">
+									<img src="resources/icons/mysql.svg" alt="mysql" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "avanishmani", { responsive: true });
+				<div class="project-item">
+					<div class="image-section">
+						<img src="./resources/kfc.jpg" alt="KFC screenshot">
+					</div>
+					<div class="project-info">
+						<h1>online.kfc.co.in -clone</h1>
+						<div class="links">
+							<a target="_blank" href="http://github.com/sankarshandev98/for-stick-2556">
+								<i class='bx bxl-github'></i> Github repo
+							</a>
+							<a target="_blank" href="https://symphonious-rolypoly-b8a660.netlify.app/">
+								<i class='bx bx-link-external'></i> Deployed link
+							</a>
+						</div>
+						<p>KFC is an American fast-food restaurant chain headquartered in Louisville, Kentucky,that specializes in Fried chicken.
+							. We have developed this clone in collaboration with 5 people in
+							a team. We tried to clone the same UI as the original with responsiveness.</p>
+						<div class="tech-stacks">
+							<h4>Tech Stacks</h4>
+							<div>
+								<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+									title="JavaScript">
+									<img src="resources/icons/javascript.svg" alt="javascript" />
+								</a>
+								<a href="https://www.w3.org/html/" target="_blank" title="HTML5">
+									<img src="resources/icons/html5.svg" alt="html5" />
+								</a>
+								<a href="https://www.w3schools.com/css/" target="_blank" title="CSS3">
+									<img src="resources/icons/css3.svg" alt="css3" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    // Use a proxy
-    // GitHubCalendar(".calendar", "avanishmani", {
-    //    proxy (avanishmani) {
-    //      return fetch(`https://your-proxy.com/github?user=${avanishmani}`)
-    //    }
-    // }).then(r => r.text())
-</script>
+				<div class="project-item">
+					<div class="image-section">
+						<img src="./resources/indianExpress.jpg" alt="indianExpress screenshot">
+					</div>
+					<div class="project-info">
+						<h1>Indianexpress.com clone</h1>
+						<div class="links">
+							<a target="_blank" href="https://github.com/Raj4709267/Web-19-IndianExpress">
+								<i class='bx bxl-github'></i> Github repo
+							</a>
+							<a target="_blank" href="https://lighthearted-truffle-d27293.netlify.app/index.html">
+								<i class='bx bx-link-external'></i> Deployed link
+							</a>
+						</div>
+						<p>A news website that brings to users the latest news from all around the world and performs various functions like sign up, log out, subscribe, and much more . We have developed this clone in collaboration with 5 people in
+							a team. We tried to clone the same UI as the original with responsiveness.</p>
+						<div class="tech-stacks">
+							<h4>Tech Stacks</h4>
+							<div>
+								<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+									title="JavaScript">
+									<img src="resources/icons/javascript.svg" alt="javascript" />
+								</a>
+								<a href="https://www.w3.org/html/" target="_blank" title="HTML5">
+									<img src="resources/icons/html5.svg" alt="html5" />
+								</a>
+								<a href="https://www.w3schools.com/css/" target="_blank" title="CSS3">
+									<img src="resources/icons/css3.svg" alt="css3" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-  </body>
+			</div>
+		</div>
+	</section>
+	<!-------Projects Section End------>
+
+	<!---------Contact Section Start--------->
+	<section class="contact section-padding" data-scroll-index="4">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>get in <span>touch</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-5">
+					<div class="contact-info">
+						<h3>For Any Queries and Support</h3>
+						<div class="resume-btn">
+							<a href="https://drive.google.com/file/d/160jq8IufdIz4gG-75q5sR7YZNYops-6b/view?usp=sharing"
+								target="_blank" class="btn btn-1">Resume</a>
+						</div>
+						<div class="contact-info-item email">
+							<i class='bx bx-envelope'></i>
+							<h4>Write to me at</h4>
+							<p><a href="mailto:avanishmanitripathi@gmail.com"
+									title="My email">avanishmanitripathi@gmail.com</a></p>
+						</div>
+						<div class="contact-info-item mobile">
+							<i class='bx bx-phone'></i>
+							<h4>Write to me at</h4>
+							<p><a title="My mobile">+91 9451269954</a></p>
+						</div>
+						<div class="contact-info-item">
+							<i class='bx bxl-github'></i>
+							<h4>Github profile</h4>
+							<p><a target="_blank" href="https://github.com/avanishmani"
+									title="My GitHub profile">github.com/avanishmani</a></p>
+						</div>
+						<div class="contact-info-item linkedin">
+							<i class='bx bxl-linkedin'></i>
+							<h4>LinkedIn Profile</h4>
+							<p><a target="_blank" href="https://www.linkedin.com/in/imavanishmani/"
+									title="LinkedIn profile">linkedin.com/in/imavanishmani</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-7">
+					<div class="contact-form">
+						<form id="email_form">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input id="name" type="text" name="name" placeholder="Your Name"
+											class="form-control" required>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input id="email" type="text" name="email" placeholder="Your Email"
+											class="form-control" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="form-group">
+										<input id="subject" type="text" name="subject" placeholder="Subject (optional)"
+											class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="form-group">
+										<textarea id="message" name="message" placeholder="Your Message (10-500 char)"
+											class="form-control" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<button id="submit" type="submit" class="btn btn-2">Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---------Contact Section End---------->
+
+	<!--------Footer Section Start--------->
+	<footer class="footer">
+		<p class="copyright-text">Copyright &copy; Designed and created by <a href="https://github.com/avanishmani"
+				target="_blank">Avanish Mani Tripathi</a></p>
+	</footer>
+	<!--------Footer Section End---------->
+
+	<!--------Toggle Theme Start - light & dark mode----------->
+	<div class="toggle-theme" title="Change theme">
+		<i class="bx"></i>
+	</div>
+	<!--------Toggle Theme End------------>
+
+	<!--------Popup Message Modal Start------->
+	<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<span id="popup-message"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------Popup Message Modal End------->
+
+	<!---Jquery js---->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+		integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!---bootstrap js---->
+	<script src="./scripts/bootstrap.min.js"></script>
+	<!---ScrollIt js---->
+	<script src="scripts/scrollIt.min.js"></script>
+	<!------ Github Calender js ------>
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+	<!-------index js------>
+	<script src="scripts/index.js"></script>
+
+</body>
+
 </html>
