@@ -468,11 +468,12 @@ body.dark .home {
     gap: 40px;
 }
 .about-me .profile {
-    height: 240px;
-    width: 240px;
+    height: 250px;
+    width: 250px;
     margin: auto;
     border: 4px var(--main-to-dark-color) solid;
     border-radius: 50%;
+   
 }
 body.dark .about-me .profile {
     border-color: var(--black-900);
