@@ -4,483 +4,623 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Avanish Tripathi Portfolio</title>
+	<title>Avanish Mani Tripathi — Software Developer</title>
+	<meta name="description"
+		content="Software Developer building national-scale platforms at IRCTC. Expert in Java, Spring Boot, REST APIs, and backend architecture.">
 	<link rel="shortcut icon" type="image/png" href="./resources/avanish.jpg">
-	<!---- Box Icons ---->
+	<!-- Box Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
 		integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!--- Github calender --->
+	<!-- Github Calendar -->
 	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-	<!--- Bootstrap CSS --->
-	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	<!-- Stylesheet -->
 	<link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
 
-	<!------Preloader Start--------->
-	<div class="preloader">
-		<div></div>
-	</div>
-	<!------Preloader End--------->
+	<!-- Particle Background -->
+	<canvas id="particles-canvas"></canvas>
 
-	<!----Navbar Start---->
-	<nav id="nav-menu" class="navbar navbar-expand-lg fixed-top">
+	<!-- ====== Navbar ====== -->
+	<nav class="navbar" id="navbar">
 		<div class="container">
-			<!-- Brand -->
-			<a class="navbar-brand" href="/">
-				<div class="cube">
-					<div class="top"></div>
-					<div>
-						<span style="--i:0"></span>
-						<span style="--i:1"></span>
-						<span style="--i:2"></span>
-						<span style="--i:3"></span>
-					</div>
-				</div>
+			<a href="#" class="nav-brand">
+				<span class="brand-text">A</span><span class="brand-dot">.</span>
 			</a>
-
-			<!-- Toggler/collapsibe Button -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<i class='bx bx-menu'></i>
-			</button>
-
-			<!-- Navbar links -->
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link active" data-scroll-nav="0" href="#"><i class='bx bx-home-alt'></i> Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll-nav="1" href="#"><i class='bx bx-user'></i> About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll-nav="2" href="#"><i class='bx bx-wrench'></i> Skills</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll-nav="3" href="#"><i class='bx bx-carousel'></i> Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-scroll-nav="4" href="#"><i class='bx bx-envelope'></i> Contact &
-							Resume</a>
-					</li>
-
-				</ul>
+			<div class="nav-links" id="navLinks">
+				<a href="#hero" class="active" data-section="hero">Home</a>
+				<a href="#about" data-section="about">About</a>
+				<a href="#experience" data-section="experience">Experience</a>
+				<a href="#skills" data-section="skills">Skills</a>
+				<a href="#projects" data-section="projects">Projects</a>
+				<a href="#contact" data-section="contact">Contact</a>
 			</div>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+				<span></span><span></span><span></span>
+			</button>
 		</div>
 	</nav>
-	<!----Navbar End------>
 
-	<!----Home Section Start ----->
-	<section class="home d-flex align-items-center" id="home" data-scroll-index="0">
-		<div class="container">
-			<p>Hi, I'm a</p>
-			<h1>Java Backend Developer</h1>
-			<div class="home-btn">
-				<a href="https://drive.google.com/file/d/160jq8IufdIz4gG-75q5sR7YZNYops-6b/view?usp=sharing"
-					target="_blank" title="Have a look at my resume" class="btn btn-1">Resume</a>
-			</div>
+	<!-- ====== Hero Section ====== -->
+	<section class="hero" id="hero">
+		<div class="hero-mesh">
+			<div class="mesh-gradient mesh-1"></div>
+			<div class="mesh-gradient mesh-2"></div>
+			<div class="mesh-gradient mesh-3"></div>
 		</div>
-		<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-			<path class="path" fill="#0099ff" fill-opacity="1"
-				d="M0,128L80,117.3C160,107,320,85,480,96C640,107,800,149,960,160C1120,171,1280,149,1360,138.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-			</path>
-		</svg>
-	</section>
-	<!----Home Section End ----->
-
-	<!----About Me Section Start----->
-	<section class="about-me section-padding aboutsection" id="about_me about" data-scroll-index="1">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h2>About <span>Me</span></h2>
+			<div class="hero-content">
+				<div class="hero-badge reveal">
+					<span class="pulse-dot"></span>
+					Available for opportunities
+				</div>
+				<p class="hero-greeting reveal reveal-delay-1">Hi, I'm</p>
+				<h1 class="hero-name reveal reveal-delay-1">Avanish Mani<br>Tripathi</h1>
+				<h2 class="hero-title-line reveal reveal-delay-2">
+					<span class="typed-text" id="typedText"></span><span class="typing-cursor" id="cursor">|</span>
+				</h2>
+				<p class="hero-desc reveal reveal-delay-3">
+					Building national-scale backend systems at IRCTC — crafting high-traffic APIs for ship ticketing,
+					food delivery, and digital payments that serve millions.
+				</p>
+				<div class="hero-btns reveal reveal-delay-4">
+					<a href="https://drive.google.com/file/d/160jq8IufdIz4gG-75q5sR7YZNYops-6b/view?usp=sharing"
+						target="_blank" class="btn btn-primary">
+						<i class='bx bx-download'></i> Resume
+					</a>
+					<a href="#projects" class="btn btn-outline">
+						<i class='bx bx-briefcase'></i> View Work
+					</a>
+				</div>
+
+				<div class="hero-stats reveal reveal-delay-5">
+					<div class="hero-stat">
+						<div class="stat-number" data-count="2">0</div>
+						<div class="stat-label">Years Exp</div>
+					</div>
+					<div class="hero-stat">
+						<div class="stat-number" data-count="3">0</div>
+						<div class="stat-label">Live Products</div>
+					</div>
+					<div class="hero-stat">
+						<div class="stat-number" data-text="IRCTC">—</div>
+						<div class="stat-label">National Scale</div>
 					</div>
 				</div>
 			</div>
-			<div class="row-2">
-				<img src="./resources/avanish.jpg" alt="Profile" title="My profile photo" class="profile">
-				<div class="about-text">
-					<h2>I'm Avanish Mani Tripathi</h2>
-					<div class="wrapper">
-						<h1 class="static-text">Skilled in </h1>
-						<ul class="skills">
-							<li><span>Backend development</span></li>
-							<li><span>Spring Boot</span></li>
-							<li><span>Hibernet</span></li>
-							<li><span>MySQL</span></li>
-						</ul>
-					</div>
 
-					<p>Aspiring Java Backend Developer having a problem-solving mindset with a positive attitude and a
-						willingness to learn new technologies. I am looking for a hopeful role in a company where I can
-						utilize my skills and experience to contribute to the success of the team and the organization.
+			<div class="hero-visual reveal-scale">
+				<div class="hero-image-wrapper" id="heroImageWrapper">
+					<div class="hero-image-ring"></div>
+					<div class="hero-image-frame">
+						<img src="./resources/avanish_hero.jpg" alt="Avanish Mani Tripathi standing on ocean rocks">
+					</div>
+					<div class="hero-image-dot dot-1"></div>
+					<div class="hero-image-dot dot-2"></div>
+					<div class="hero-image-dot dot-3"></div>
+					<!-- Floating Badges -->
+					<div class="floating-badge badge-1"><i class='bx bxl-java'></i> Java</div>
+					<div class="floating-badge badge-2"><i class='bx bx-server'></i> Spring Boot</div>
+					<div class="floating-badge badge-3"><i class='bx bx-data'></i> MySQL</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ====== About Section ====== -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="reveal">
+				<span class="section-label">About Me</span>
+				<h2 class="section-title">Passionate about building<br><span class="gradient-text">systems that
+						scale</span></h2>
+			</div>
+			<div class="about-grid">
+				<div class="about-image-mosaic reveal-left">
+					<div class="mosaic-main" id="aboutImageCard">
+						<img src="./resources/avanish_about.jpg" alt="Avanish Mani Tripathi">
+						<span class="about-image-label">// avanish.dev</span>
+					</div>
+					<div class="mosaic-side">
+						<div class="mosaic-thumb">
+							<img src="./resources/avanish_beach.jpg" alt="At the beach">
+						</div>
+						<div class="mosaic-thumb">
+							<img src="./resources/avanish_hero.jpg" alt="Ocean view">
+						</div>
+					</div>
+				</div>
+				<div class="about-content reveal-right">
+					<h3>Backend Developer crafting production systems for India's largest railway platform</h3>
+					<p>
+						I'm a Software Developer at Ipsator Analytics, where I build and maintain backend architecture
+						for IRCTC's national-scale platforms — including Lakshadweep Ship Ticketing, e-Catering, and
+						IRCTC Pay.
 					</p>
+					<p>
+						With 2+ years of experience in Java-based systems, I specialize in REST API design, Spring Boot,
+						JPA/Hibernate, and complex business logic implementation. I thrive on building high-traffic
+						systems that serve millions of users reliably.
+					</p>
+					<div class="about-highlights">
+						<div class="highlight-pill"><i class='bx bx-code-alt'></i> Java & Spring Boot</div>
+						<div class="highlight-pill"><i class='bx bx-data'></i> MySQL & JPA</div>
+						<div class="highlight-pill"><i class='bx bx-server'></i> REST API Design</div>
+						<div class="highlight-pill"><i class='bx bx-shield'></i> Payment Systems</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!----About Me Section End----->
 
-
-	<!----Skills Section Start----->
-	<section class="skills section-padding" id="skills" data-scroll-index="2">
+	<!-- ====== Experience Section ====== -->
+	<section class="experience" id="experience">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h2>Technical <span>Skills</span></h2>
-						<h3 align="center">Tools and Technologies</h3>
+			<div class="reveal">
+				<span class="section-label">Career</span>
+				<h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+				<p class="section-subtitle">My journey building scalable backend systems for national-scale platforms.
+				</p>
+			</div>
+
+			<div class="experience-grid reveal">
+				<!-- Sidebar Navigation -->
+				<div class="exp-sidebar">
+					<div class="exp-nav-item active" data-exp="exp-1">
+						<div class="exp-nav-dot"></div>
+						<div class="exp-nav-label">
+							<h4>Software Developer</h4>
+							<span>2025 — Present</span>
+						</div>
+					</div>
+					<div class="exp-nav-item" data-exp="exp-2">
+						<div class="exp-nav-dot"></div>
+						<div class="exp-nav-label">
+							<h4>Junior Java Developer</h4>
+							<span>2024 — 2025</span>
+						</div>
+					</div>
+					<div class="exp-nav-item" data-exp="exp-3">
+						<div class="exp-nav-dot"></div>
+						<div class="exp-nav-label">
+							<h4>Trainee Java Developer</h4>
+							<span>Jan — Apr 2024</span>
+						</div>
+					</div>
+					<div class="exp-nav-item" data-exp="exp-4">
+						<div class="exp-nav-dot"></div>
+						<div class="exp-nav-label">
+							<h4>Project Manager</h4>
+							<span>2016 — 2021</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div>
-				<div class="tools_and_tech">
-					<a href="https://www.java.com" target="_blank" title="Java">
-						<img src="resources/icons/java.svg" alt="java" />
-					</a>
-					<a href="https://www.angular.io" target="_blank" title="Angular">
-						<img src="resources/icons/Angular_Logo.svg" alt="Angular" />
-					</a>
-					<a href="https://www.mysql.com/" target="_blank" title="MySQL">
-						<img src="resources/icons/mysql.svg" alt="mysql" />
-					</a>
-					<a href="https://spring.io/" target="_blank" title="Spring">
-						<img src="resources/icons/spring.svg" alt="spring" />
-					</a>
-					<a href="https://firebase.google.com/" target="_blank" title="Firebase">
-						<img src="resources/icons/firebase-icon.svg" alt="firebase" />
-					</a>
-					<a href="https://git-scm.com/" target="_blank" title="Git">
-						<img src="resources/icons/git.svg" alt="git" />
-					</a>
-					<a href="https://aws.amazon.com" target="_blank" title="AWS">
-						<img src="resources/icons/aws.svg" alt="aws" />
-					</a>
-					<a href="https://heroku.com" target="_blank" title="Heroku">
-						<img src="resources/icons/heroku.svg" alt="heroku" />
-					</a>
 
-					<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
-						title="JavaScript">
-						<img src="resources/icons/javascript.svg" alt="javascript" />
-					</a>
-					<a href="https://www.w3.org/html/" target="_blank" title="HTML5">
-						<img src="resources/icons/html5.svg" alt="html5" />
-					</a>
-					<a href="https://www.w3schools.com/css/" target="_blank" title="CSS3">
-						<img src="resources/icons/css3.svg" alt="css3" />
-					</a>
+				<!-- Panels -->
+				<div class="exp-panels">
+					<div class="exp-panel active" id="exp-1">
+						<div class="exp-panel-header">
+							<span class="exp-date">Oct 2025 — Present</span>
+							<h3>Software Developer</h3>
+							<p class="exp-company">Ipsator Analytics Pvt. Ltd. · Noida, India</p>
+						</div>
+						<ul class="exp-details">
+							<li>Developing high-traffic Java backend systems for IRCTC Lakshadweep Ship Ticketing, IRCTC
+								e-Catering, and IRCTC Pay.</li>
+							<li>Designing scalable REST APIs and implementing complex business workflows using Spring
+								Boot, Play Framework, JPA/Hibernate, and MySQL.</li>
+							<li>Architecting admin modules for seat/berth inventory, voyage scheduling, route
+								management, and emergency quota handling.</li>
+						</ul>
+						<div class="exp-tags">
+							<span class="exp-tag">Lakshadweep Ship Ticketing</span>
+							<span class="exp-tag">IRCTC e-Catering</span>
+							<span class="exp-tag">IRCTC Pay</span>
+						</div>
+					</div>
+
+					<div class="exp-panel" id="exp-2">
+						<div class="exp-panel-header">
+							<span class="exp-date">May 2024 — Dec 2025</span>
+							<h3>Junior Java Developer</h3>
+							<p class="exp-company">Ipsator Analytics Pvt. Ltd. · Noida, India</p>
+						</div>
+						<ul class="exp-details">
+							<li>Developed and maintained Java backend services across multiple IRCTC projects.</li>
+							<li>Collaborated in designing scalable backend systems and solving production-level issues.
+							</li>
+							<li>Integrated third-party services including payment gateways and food delivery
+								aggregators.</li>
+						</ul>
+						<div class="exp-tags">
+							<span class="exp-tag">Java</span>
+							<span class="exp-tag">Spring Boot</span>
+							<span class="exp-tag">REST APIs</span>
+						</div>
+					</div>
+
+					<div class="exp-panel" id="exp-3">
+						<div class="exp-panel-header">
+							<span class="exp-date">Jan 2024 — Apr 2024</span>
+							<h3>Trainee Java Developer</h3>
+							<p class="exp-company">Ipsator Analytics Pvt. Ltd. · Bengaluru, India</p>
+						</div>
+						<ul class="exp-details">
+							<li>Built and maintained server-side applications for IRCTC e-Catering.</li>
+							<li>Implemented security and data protection mechanisms and resolved backend issues.</li>
+							<li>Gained deep knowledge of enterprise-scale Java application architecture.</li>
+						</ul>
+						<div class="exp-tags">
+							<span class="exp-tag">Play Framework</span>
+							<span class="exp-tag">MySQL</span>
+							<span class="exp-tag">e-Catering</span>
+						</div>
+					</div>
+
+					<div class="exp-panel" id="exp-4">
+						<div class="exp-panel-header">
+							<span class="exp-date">Aug 2016 — May 2021</span>
+							<h3>Project Manager</h3>
+							<p class="exp-company">Sai Infra Group · Lucknow, India</p>
+						</div>
+						<ul class="exp-details">
+							<li>Led end-to-end project planning including budgeting, cost estimation, and regulatory
+								compliance.</li>
+							<li>Managed on-site personnel and coordinated cross-functional teams for successful project
+								delivery.</li>
+						</ul>
+						<div class="exp-tags">
+							<span class="exp-tag">Project Management</span>
+							<span class="exp-tag">Team Leadership</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!----Skills Section End----->
 
-
-	<!----Github Calender & Statistics Start----->
-	<section class="github-calender section-padding">
+	<!-- ====== Skills Section ====== -->
+	<section class="skills" id="skills">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h2>Github <span>Calender</span></h2>
-						<!-- <h3 align="center">Tools and Technologies</h3> -->
+			<div class="reveal">
+				<span class="section-label">Expertise</span>
+				<h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+				<p class="section-subtitle">Technologies and tools I work with daily to build scalable systems.</p>
+			</div>
+
+			<div class="skills-container">
+				<!-- Skill items as a flat grid -->
+				<div class="skills-orbit reveal">
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bxl-java'></i></div>
+						<span class="skill-name">Java</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bx-leaf'></i></div>
+						<span class="skill-name">Spring Boot</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bx-play'></i></div>
+						<span class="skill-name">Play Framework</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bx-data'></i></div>
+						<span class="skill-name">JPA / Hibernate</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bx-cylinder'></i></div>
+						<span class="skill-name">MySQL</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bx-transfer'></i></div>
+						<span class="skill-name">REST APIs</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bx-shield'></i></div>
+						<span class="skill-name">Spring Security</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bxl-git'></i></div>
+						<span class="skill-name">Git</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bx-package'></i></div>
+						<span class="skill-name">Maven</span>
+					</div>
+					<div class="skill-item">
+						<div class="skill-icon"><i class='bx bxl-aws'></i></div>
+						<span class="skill-name">AWS</span>
 					</div>
 				</div>
-			</div>
-			<div>
-				<div class="calendar" id="github-calender">
-					Loading Github Calender...
+
+				<!-- Skill categories with animated bars -->
+				<div class="skills-categories reveal">
+					<div class="skill-category-card">
+						<h4><i class='bx bx-server'></i> Core Backend</h4>
+						<div class="skill-bar">
+							<div class="skill-bar-label"><span>Java / Spring Boot</span><span>95%</span></div>
+							<div class="skill-bar-track">
+								<div class="skill-bar-fill" data-width="95"></div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<div class="skill-bar-label"><span>REST API Design</span><span>92%</span></div>
+							<div class="skill-bar-track">
+								<div class="skill-bar-fill" data-width="92"></div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<div class="skill-bar-label"><span>JPA / Hibernate</span><span>88%</span></div>
+							<div class="skill-bar-track">
+								<div class="skill-bar-fill" data-width="88"></div>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category-card">
+						<h4><i class='bx bx-layer'></i> Systems & Architecture</h4>
+						<div class="skill-bar">
+							<div class="skill-bar-label"><span>Payment Systems</span><span>85%</span></div>
+							<div class="skill-bar-track">
+								<div class="skill-bar-fill" data-width="85"></div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<div class="skill-bar-label"><span>Booking Systems</span><span>90%</span></div>
+							<div class="skill-bar-track">
+								<div class="skill-bar-fill" data-width="90"></div>
+							</div>
+						</div>
+						<div class="skill-bar">
+							<div class="skill-bar-label"><span>Data Modeling</span><span>87%</span></div>
+							<div class="skill-bar-track">
+								<div class="skill-bar-fill" data-width="87"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!----Github Calender & Statistics End----->
 
-	<!-------Projects Section Start------>
-	<section class="projects section-padding" id="projects" data-scroll-index="3">
+	<!-- ====== Projects Section ====== -->
+	<section class="projects" id="projects">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h2>Featured <span>Projects</span></h2>
-					</div>
-				</div>
+			<div class="reveal">
+				<span class="section-label">Portfolio</span>
+				<h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+				<p class="section-subtitle">National-scale platforms I've engineered and contributed to.</p>
 			</div>
-			<div class="projects-container">
 
-				<div class="project-item">
-					<div class="image-section">
-						<img src="./resources/marrs_bank.png" alt="MARRS Bank">
-					</div>
-					<div class="project-info">
-						<h1>MARRS Bank</h1>
-						<div class="links">
-							<a target="_blank" href="https://github.com/mazidul36i/marrsbank">
-								<i class='bx bxl-github'></i> Github repo
-							</a>
-							<a target="_blank"
-								href="https://drive.google.com/file/d/1nGFgKzekZyN2rz5rxfeD6Vmuu4fk23xq/view?usp=sharing">
-								<i class='bx bx-play-circle'></i> Presentation Video
-							</a>
+			<div class="projects-grid">
+				<!-- Featured: Lakshadweep -->
+				<div class="project-featured reveal">
+					<div class="project-preview">
+						<div class="preview-frame">
+							<img src="./resources/lakshadweep.png" alt="Lakshadweep Ship Ticketing System">
 						</div>
-						<p>This is the MARRS bank, a RESTful API for an Online Payment Wallet application. This API
-							performs
-							all the fundamental CRUD operations of any Online Wallet Banking platform with user
-							validation at every step.</p>
-						<div class="tech-stacks">
-							<h4>Tech Stacks</h4>
-							<div>
-								<a href="https://www.java.com/" target="_blank" title="Java">
-									<img src="resources/icons/java.svg" alt="java" />
-								</a>
-								<a href="https://spring.io/" target="_blank" title="SpringBoot">
-									<img src="resources/icons/spring.svg" alt="spring" />
-								</a>
-								<a href="https://www.mysql.com/" target="_blank" title="MySQL">
-									<img src="resources/icons/mysql.svg" alt="mysql" />
-								</a>
-							</div>
+						<span class="project-live-badge">Live</span>
+					</div>
+					<div class="project-detail">
+						<span class="project-type">// Featured · IRCTC Platform</span>
+						<h3>Lakshadweep Ship Ticketing</h3>
+						<p>Engineered backend architecture for real-time ship ticket booking to/from Lakshadweep. Built
+							comprehensive admin modules for seat/berth inventory, voyage scheduling, route management,
+							and emergency quota handling. Supports booking flows for islanders & non-islanders,
+							payments, ship pass issuance, and web check-in.</p>
+						<div class="project-tech-stack">
+							<span>Java</span>
+							<span>Spring Boot</span>
+							<span>JPA</span>
+							<span>MySQL</span>
+							<span>REST APIs</span>
+							<span>AWS</span>
+						</div>
+						<div class="project-actions">
+							<a href="https://lakshadweep.irctc.co.in" target="_blank" class="project-link">
+								Visit Live Site <i class='bx bx-right-arrow-alt'></i>
+							</a>
 						</div>
 					</div>
 				</div>
 
-				<div class="project-item">
-					<div class="image-section">
-						<img src="./resources/Manrega.jpg" alt="Manrega screenshot">
-					</div>
-					<div class="project-info">
-						<h1>Manrega</h1>
-						<div class="links">
-							<a target="_blank" href="https://github.com/avanishmani/Avanish_-MGNREGA">
-								<i class='bx bxl-github'></i> Github repo
-							</a>
-							<a target="_blank"
-								href="https://drive.google.com/file/d/1EVqSN1ankbEXnZPW-fH_CBciRYozQUeS/view">
-								<i class='bx bx-play-circle'></i> Presentation Video
+				<!-- Row: e-Catering + IRCTC Pay + MARRS Bank -->
+				<div class="projects-row">
+					<div class="project-card-sm reveal">
+						<div class="card-image">
+							<img src="./resources/ecatering.png" alt="IRCTC e-Catering Platform">
+							<span class="project-live-badge">Live</span>
+						</div>
+						<div class="card-body">
+							<h4>IRCTC e-Catering</h4>
+							<p>Designed APIs powering integrations with Zomato, Swiggy, Domino's. Implemented order
+								processing, real-time availability, and station-based delivery logic.</p>
+							<div class="card-tech">
+								<span>Java</span>
+								<span>Play Framework</span>
+								<span>MySQL</span>
+							</div>
+							<a href="https://www.ecatering.irctc.co.in/" target="_blank" class="project-link">
+								Visit Live Site <i class='bx bx-right-arrow-alt'></i>
 							</a>
 						</div>
-						<p>Mahatma Gandhi National Rural Employment Guarantee Act 2005 or MNREGA, earlier known as the National Rural Employment Guarantee Act or NREGA, is an Indian labour law and social security measure that aims to guarantee the 'right to work'.</p>
-						<div class="tech-stacks">
-							<h4>Tech Stacks</h4>
-							<div>
-								<a href="https://www.java.com/" target="_blank" title="Java">
-									<img src="resources/icons/java.svg" alt="java" />
-								</a>
-								<a href="https://www.mysql.com/" target="_blank" title="MySQL">
-									<img src="resources/icons/mysql.svg" alt="mysql" />
-								</a>
+					</div>
+
+					<div class="project-card-sm reveal reveal-delay-1">
+						<div class="card-image">
+							<div class="mock-app-frame">
+								<i class='bx bx-credit-card'></i>
+								<span>Secure Payment Platform</span>
+							</div>
+							<span class="project-live-badge">Live</span>
+						</div>
+						<div class="card-body">
+							<h4>IRCTC Pay</h4>
+							<p>Contributed to backend services for secure digital payments, including API development,
+								transaction handling, and business rule enforcement.</p>
+							<div class="card-tech">
+								<span>Java</span>
+								<span>Spring Boot</span>
+								<span>Payment Gateway</span>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="project-item">
-					<div class="image-section">
-						<img src="./resources/kfc.jpg" alt="KFC screenshot">
-					</div>
-					<div class="project-info">
-						<h1>online.kfc.co.in -clone</h1>
-						<div class="links">
-							<a target="_blank" href="http://github.com/sankarshandev98/for-stick-2556">
-								<i class='bx bxl-github'></i> Github repo
-							</a>
-							<a target="_blank" href="https://symphonious-rolypoly-b8a660.netlify.app/">
-								<i class='bx bx-link-external'></i> Deployed link
-							</a>
+					<div class="project-card-sm reveal reveal-delay-2">
+						<div class="card-image">
+							<img src="./resources/marrs_bank.png" alt="MARRS Bank">
 						</div>
-						<p>KFC is an American fast-food restaurant chain headquartered in Louisville, Kentucky,that specializes in Fried chicken.
-							. We have developed this clone in collaboration with 5 people in
-							a team. We tried to clone the same UI as the original with responsiveness.</p>
-						<div class="tech-stacks">
-							<h4>Tech Stacks</h4>
-							<div>
-								<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
-									title="JavaScript">
-									<img src="resources/icons/javascript.svg" alt="javascript" />
-								</a>
-								<a href="https://www.w3.org/html/" target="_blank" title="HTML5">
-									<img src="resources/icons/html5.svg" alt="html5" />
-								</a>
-								<a href="https://www.w3schools.com/css/" target="_blank" title="CSS3">
-									<img src="resources/icons/css3.svg" alt="css3" />
-								</a>
+						<div class="card-body">
+							<h4>MARRS Bank</h4>
+							<p>RESTful API for an Online Payment Wallet application performing fundamental CRUD
+								operations with user validation.</p>
+							<div class="card-tech">
+								<span>Java</span>
+								<span>Spring Boot</span>
+								<span>MySQL</span>
 							</div>
+							<a href="https://github.com/mazidul36i/marrsbank" target="_blank" class="project-link">
+								<i class='bx bxl-github'></i> Source <i class='bx bx-right-arrow-alt'></i>
+							</a>
 						</div>
 					</div>
 				</div>
-
-				<div class="project-item">
-					<div class="image-section">
-						<img src="./resources/indianExpress.jpg" alt="indianExpress screenshot">
-					</div>
-					<div class="project-info">
-						<h1>Indianexpress.com clone</h1>
-						<div class="links">
-							<a target="_blank" href="https://github.com/Raj4709267/Web-19-IndianExpress">
-								<i class='bx bxl-github'></i> Github repo
-							</a>
-							<a target="_blank" href="https://lighthearted-truffle-d27293.netlify.app/index.html">
-								<i class='bx bx-link-external'></i> Deployed link
-							</a>
-						</div>
-						<p>A news website that brings to users the latest news from all around the world and performs various functions like sign up, log out, subscribe, and much more . We have developed this clone in collaboration with 5 people in
-							a team. We tried to clone the same UI as the original with responsiveness.</p>
-						<div class="tech-stacks">
-							<h4>Tech Stacks</h4>
-							<div>
-								<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
-									title="JavaScript">
-									<img src="resources/icons/javascript.svg" alt="javascript" />
-								</a>
-								<a href="https://www.w3.org/html/" target="_blank" title="HTML5">
-									<img src="resources/icons/html5.svg" alt="html5" />
-								</a>
-								<a href="https://www.w3schools.com/css/" target="_blank" title="CSS3">
-									<img src="resources/icons/css3.svg" alt="css3" />
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</section>
-	<!-------Projects Section End------>
 
-	<!---------Contact Section Start--------->
-	<section class="contact section-padding" id data-scroll-index="4">
+	<!-- ====== GitHub Section ====== -->
+	<section class="github-section" id="github">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h2>get in <span>touch</span></h2>
-					</div>
-				</div>
+			<div class="reveal">
+				<span class="section-label">Open Source</span>
+				<h2 class="section-title">GitHub <span class="gradient-text">Activity</span></h2>
 			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-5">
-					<div class="contact-info">
-						<h3>For Any Queries and Support</h3>
-						<div class="resume-btn">
-							<a href="https://drive.google.com/file/d/160jq8IufdIz4gG-75q5sR7YZNYops-6b/view?usp=sharing"
-								target="_blank" class="btn btn-1">Resume</a>
+			<div class="github-wrapper reveal">
+				<div class="calendar" id="github-calender">Loading GitHub contributions...</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ====== Contact Section ====== -->
+	<section class="contact" id="contact">
+		<div class="contact-glow contact-glow-1"></div>
+		<div class="contact-glow contact-glow-2"></div>
+		<div class="container">
+			<div class="reveal">
+				<span class="section-label">Contact</span>
+				<h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+				<p class="section-subtitle">Have a project in mind or want to collaborate? Feel free to reach out.</p>
+			</div>
+
+			<div class="contact-grid">
+				<div class="contact-card reveal-left">
+					<h3>Get in Touch</h3>
+					<p>Open for discussions about backend engineering, Java systems, or new opportunities.</p>
+
+					<a href="https://drive.google.com/file/d/160jq8IufdIz4gG-75q5sR7YZNYops-6b/view?usp=sharing"
+						target="_blank" class="btn btn-primary"
+						style="width: 100%; justify-content: center; margin-bottom: 28px;">
+						<i class='bx bx-download'></i> Download Resume
+					</a>
+
+					<div class="contact-info-item">
+						<div class="contact-icon"><i class='bx bx-envelope'></i></div>
+						<div class="contact-text">
+							<h4>Email</h4>
+							<a href="mailto:avanishmanitripathi@gmail.com">avanishmanitripathi@gmail.com</a>
 						</div>
-						<div class="contact-info-item email">
-							<i class='bx bx-envelope'></i>
-							<h4>Write to me at</h4>
-							<p><a href="mailto:avanishmanitripathi@gmail.com"
-									title="My email">avanishmanitripathi@gmail.com</a></p>
+					</div>
+					<div class="contact-info-item">
+						<div class="contact-icon"><i class='bx bx-phone'></i></div>
+						<div class="contact-text">
+							<h4>Phone</h4>
+							<p>+91 9451269954</p>
 						</div>
-						<div class="contact-info-item mobile">
-							<i class='bx bx-phone'></i>
-							<h4>Write to me at</h4>
-							<p><a title="My mobile">+91 9451269954</a></p>
+					</div>
+					<div class="contact-info-item">
+						<div class="contact-icon"><i class='bx bxl-github'></i></div>
+						<div class="contact-text">
+							<h4>GitHub</h4>
+							<a href="https://github.com/avanishmani" target="_blank">github.com/avanishmani</a>
 						</div>
-						<div class="contact-info-item">
-							<i class='bx bxl-github'></i>
-							<h4>Github profile</h4>
-							<p><a target="_blank" href="https://github.com/avanishmani"
-									title="My GitHub profile">github.com/avanishmani</a></p>
-						</div>
-						<div class="contact-info-item linkedin">
-							<i class='bx bxl-linkedin'></i>
-							<h4>LinkedIn Profile</h4>
-							<p><a target="_blank" href="https://www.linkedin.com/in/imavanishmani/"
-									title="LinkedIn profile">linkedin.com/in/imavanishmani</a></p>
+					</div>
+					<div class="contact-info-item">
+						<div class="contact-icon"><i class='bx bxl-linkedin'></i></div>
+						<div class="contact-text">
+							<h4>LinkedIn</h4>
+							<a href="https://www.linkedin.com/in/imavanishmani/"
+								target="_blank">linkedin.com/in/imavanishmani</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8 col-md-7">
-					<div class="contact-form">
-						<form id="email_form">
-							<div class="row">
-								<div class="col-lg-6">
-									<div class="form-group">
-										<input id="name" type="text" name="name" placeholder="Your Name"
-											class="form-control" required>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="form-group">
-										<input id="email" type="text" name="email" placeholder="Your Email"
-											class="form-control" required>
-									</div>
-								</div>
+
+				<div class="contact-form-card reveal-right">
+					<form id="email_form">
+						<div class="form-row">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input id="name" type="text" name="name" placeholder="Your name" required>
 							</div>
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="form-group">
-										<input id="subject" type="text" name="subject" placeholder="Subject (optional)"
-											class="form-control">
-									</div>
-								</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input id="email" type="email" name="email" placeholder="your@email.com" required>
 							</div>
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="form-group">
-										<textarea id="message" name="message" placeholder="Your Message (10-500 char)"
-											class="form-control" required></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12">
-									<button id="submit" type="submit" class="btn btn-2">Send Message</button>
-								</div>
-							</div>
-						</form>
-					</div>
+						</div>
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<input id="subject" type="text" name="subject" placeholder="What's this about?">
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" placeholder="Tell me about your project or idea..."
+								required></textarea>
+						</div>
+						<button id="submit" type="submit" class="btn btn-primary"
+							style="width: 100%; justify-content: center;">
+							<i class='bx bx-send'></i> Send Message
+						</button>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!---------Contact Section End---------->
 
-	<!--------Footer Section Start--------->
+	<!-- ====== Footer ====== -->
 	<footer class="footer">
-		<p class="copyright-text">Copyright &copy; Designed and created by <a href="https://github.com/avanishmani"
-				target="_blank">Avanish Mani Tripathi</a></p>
-	</footer>
-	<!--------Footer Section End---------->
-
-	<!--------Toggle Theme Start - light & dark mode----------->
-	<div class="toggle-theme" title="Change theme">
-		<i class="bx"></i>
-	</div>
-	<!--------Toggle Theme End------------>
-
-	<!--------Popup Message Modal Start------->
-	<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<span id="popup-message"></span>
-				</div>
+		<div class="container">
+			<p>© 2026 Designed & built by <a href="https://github.com/avanishmani" target="_blank">Avanish Mani
+					Tripathi</a></p>
+			<div class="footer-socials">
+				<a href="https://github.com/avanishmani" target="_blank" title="GitHub"><i
+						class='bx bxl-github'></i></a>
+				<a href="https://www.linkedin.com/in/imavanishmani/" target="_blank" title="LinkedIn"><i
+						class='bx bxl-linkedin'></i></a>
+				<a href="mailto:avanishmanitripathi@gmail.com" title="Email"><i class='bx bx-envelope'></i></a>
 			</div>
 		</div>
-	</div>
-	<!-------Popup Message Modal End------->
+	</footer>
 
-	<!---Jquery js---->
+	<!-- Theme Toggle -->
+	<div class="theme-toggle" id="themeToggle" title="Toggle theme">
+		<i class='bx bx-moon'></i>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal-overlay" id="popupModal">
+		<div class="modal-box">
+			<p id="popup-message"></p>
+			<button class="modal-close" onclick="document.getElementById('popupModal').classList.remove('show')">Got
+				it</button>
+		</div>
+	</div>
+
+	<!-- Scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
 		integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<!---bootstrap js---->
-	<script src="./scripts/bootstrap.min.js"></script>
-	<!---ScrollIt js---->
-	<script src="scripts/scrollIt.min.js"></script>
-	<!------ Github Calender js ------>
 	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-	<!-------index js------>
 	<script src="scripts/index.js"></script>
 
 </body>
