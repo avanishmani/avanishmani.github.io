@@ -331,7 +331,15 @@ themeToggle.addEventListener('click', () => {
    GitHub Calendar
    =========================== */
 if (typeof GitHubCalendar === 'function') {
-    GitHubCalendar('.calendar', 'Avanishipsator', { responsive: true });
+    // Using a verified working proxy to handle GitHub's layout and fix stats parsing
+    GitHubCalendar('.calendar', 'Avanishipsator', {
+        responsive: true,
+        tooltips: true,
+        proxy: (username) => {
+            return fetch(`https://api.bloggify.net/gh-calendar/?username=${username}`)
+                .then(r => r.text());
+        }
+    });
 }
 
 /* ===========================
