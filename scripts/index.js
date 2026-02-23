@@ -331,7 +331,7 @@ themeToggle.addEventListener('click', () => {
    GitHub Calendar
    =========================== */
 if (typeof GitHubCalendar === 'function') {
-    GitHubCalendar('.calendar', 'avanishmani', { responsive: true });
+    GitHubCalendar('.calendar', 'Avanishipsator', { responsive: true });
 }
 
 /* ===========================
