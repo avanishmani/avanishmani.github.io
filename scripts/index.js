@@ -331,14 +331,76 @@ themeToggle.addEventListener('click', () => {
    GitHub Calendar
    =========================== */
 if (typeof GitHubCalendar === 'function') {
-    // Using a verified working proxy to handle GitHub's layout and fix stats parsing
-    GitHubCalendar('.calendar', 'Avanishipsator', {
+    const calendarSelector = '.calendar';
+    const username = 'Avanishipsator';
+
+    // 1. Render the graph using the proxy
+    GitHubCalendar(calendarSelector, username, {
         responsive: true,
         tooltips: true,
-        proxy: (username) => {
-            return fetch(`https://api.bloggify.net/gh-calendar/?username=${username}`)
+        proxy: (user) => {
+            return fetch(`https://api.bloggify.net/gh-calendar/?username=${user}`)
                 .then(r => r.text());
         }
+    }).then(() => {
+        // 2. Fetch raw data from Deno API to manually calculate streaks
+        // (The library fails to parse streaks correctly from newer GitHub layout)
+        fetch(`https://github-contributions-api.deno.dev/${username}.json`)
+            .then(response => response.json())
+            .then(data => {
+                const total = data.totalContributions;
+                const days = data.contributions.flat(); // Flatten weeks into days
+
+                let currentStreak = 0;
+                let longestStreak = 0;
+                let tempStreak = 0;
+
+                // Sort days by date to ensure chronological order
+                days.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+                // Process streaks
+                const today = new Date().toISOString().split('T')[0];
+                let reachedToday = false;
+
+                days.forEach(day => {
+                    if (day.contributionCount > 0) {
+                        tempStreak++;
+                        if (tempStreak > longestStreak) longestStreak = tempStreak;
+                    } else {
+                        // If we haven't reached "today" yet, we check for streak break
+                        // Note: We ignore the current day if it's 0 because they might still commit
+                        if (day.date !== today) {
+                            tempStreak = 0;
+                        }
+                    }
+
+                    if (day.date === today) {
+                        reachedToday = true;
+                        currentStreak = tempStreak;
+                    }
+                });
+
+                // Update the DOM elements directly
+                const statsCols = document.querySelectorAll(`${calendarSelector} .contrib-column`);
+                if (statsCols.length >= 3) {
+                    // Total contributions
+                    const totalEl = statsCols[0].querySelector('.contrib-number');
+                    if (totalEl) totalEl.textContent = `${total} total`;
+
+                    // Longest streak
+                    const longestEl = statsCols[1].querySelector('.contrib-number');
+                    const longestRange = statsCols[1].querySelectorAll('.text-muted')[1];
+                    if (longestEl) longestEl.textContent = `${longestStreak} days`;
+                    if (longestRange) longestRange.textContent = 'All time';
+
+                    // Current streak
+                    const currentEl = statsCols[2].querySelector('.contrib-number');
+                    const currentRange = statsCols[2].querySelectorAll('.text-muted')[1];
+                    if (currentEl) currentEl.textContent = `${currentStreak} days`;
+                    if (currentRange) currentRange.textContent = 'Active streak';
+                }
+            })
+            .catch(err => console.error('Error fetching contribution stats:', err));
     });
 }
 
